@@ -105,10 +105,6 @@ function Book() {
     </div>
   ) : null;
 
-  console.log(`connectedUser ${JSON.stringify(connectedUser)}`);
-  console.log(`userLoading ${userLoading}`);
-  console.log(`book ${JSON.stringify(book)}`);
-
   return (
     <div className="content-container">
       <BackArrow />

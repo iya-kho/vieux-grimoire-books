@@ -22,7 +22,7 @@ function Home() {
     getBooksList();
   }, []);
   const backgroundImageStyle = { backgroundImage: `url(${Banner})` };
-  console.log(localStorage);
+
   return (
     <div className={styles.Home}>
       <div className={styles.banner} style={backgroundImageStyle} />

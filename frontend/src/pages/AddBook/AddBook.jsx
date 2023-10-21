@@ -19,10 +19,6 @@ function AddBook() {
     }
   }, [userLoading]);
 
-  console.log(`connectedUser ${JSON.stringify(connectedUser)}`);
-  console.log(`auth ${auth}`);
-  console.log(`userLoading ${userLoading}`);
-
   return (
     <div className="content-container">
       <BackArrow />
