@@ -11,13 +11,13 @@ function AddBook() {
   const navigate = useNavigate();
   const { connectedUser, auth, userLoading } = useUser();
   const [created, setCreated] = useState(false);
-  useEffect(() => {
-    if (!userLoading) {
-      if (!connectedUser || !auth) {
-        navigate(APP_ROUTES.SIGN_IN);
-      }
-    }
-  }, [userLoading]);
+  // useEffect(() => {
+  //   if (!userLoading) {
+  //     if (!connectedUser || !auth) {
+  //       navigate(APP_ROUTES.SIGN_IN);
+  //     }
+  //   }
+  // }, [userLoading]);
 
   return (
     <div className="content-container">

@@ -80,9 +80,9 @@ export async function getBestRatedBooks() {
 export async function deleteBook(id) {
   try {
     await axios.delete(`${API_ROUTES.BOOKS}/${id}`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem('token')}`,
-      },
+      // headers: {
+      //   Authorization: `Bearer ${localStorage.getItem('token')}`,
+      // },
     });
     return true;
   } catch (err) {
@@ -114,28 +114,28 @@ export async function rateBook(id, userId, rating) {
 }
 
 export async function addBook(data) {
-  const userId = localStorage.getItem('userId');
+  // const userId = localStorage.getItem('userId');
   const book = {
-    userId,
+    // userId,
     title: data.title,
     author: data.author,
     year: data.year,
     genre: data.genre,
     ratings: [{
-      userId,
+      // userId,
       grade: data.rating ? parseInt(data.rating, 10) : 0,
     }],
     averageRating: parseInt(data.rating, 10),
   };
   const bodyFormData = new FormData();
   bodyFormData.append('book', JSON.stringify(book));
-  bodyFormData.append('image', data.file[0]);
+  // bodyFormData.append('image', data.file[0]);
 
   try {
     return await axios({
       method: 'post',
       url: `${API_ROUTES.BOOKS}`,
-      data: bodyFormData,
+      data: book,
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
