@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useUser } from '../../lib/customHooks';
 import styles from './Book.module.css';
@@ -104,6 +104,10 @@ function Book() {
       </Link>
     </div>
   ) : null;
+
+  console.log(`connectedUser ${JSON.stringify(connectedUser)}`);
+  console.log(`userLoading ${userLoading}`);
+  console.log(`book ${JSON.stringify(book)}`);
 
   return (
     <div className="content-container">

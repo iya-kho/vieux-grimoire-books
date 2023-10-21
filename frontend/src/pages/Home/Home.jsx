@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BookItem from '../../components/Books/BookItem/BookItem';
 import Banner from '../../images/home_banner.jpg';
@@ -22,6 +22,7 @@ function Home() {
     getBooksList();
   }, []);
   const backgroundImageStyle = { backgroundImage: `url(${Banner})` };
+  console.log(localStorage);
   return (
     <div className={styles.Home}>
       <div className={styles.banner} style={backgroundImageStyle} />

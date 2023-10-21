@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './AddBook.module.css';
 import BookForm from '../../components/Books/BookForm/BookForm';
@@ -11,13 +11,17 @@ function AddBook() {
   const navigate = useNavigate();
   const { connectedUser, auth, userLoading } = useUser();
   const [created, setCreated] = useState(false);
-  // useEffect(() => {
-  //   if (!userLoading) {
-  //     if (!connectedUser || !auth) {
-  //       navigate(APP_ROUTES.SIGN_IN);
-  //     }
-  //   }
-  // }, [userLoading]);
+  useEffect(() => {
+    if (!userLoading) {
+      if (!connectedUser || !auth) {
+        navigate(APP_ROUTES.SIGN_IN);
+      }
+    }
+  }, [userLoading]);
+
+  console.log(`connectedUser ${JSON.stringify(connectedUser)}`);
+  console.log(`auth ${auth}`);
+  console.log(`userLoading ${userLoading}`);
 
   return (
     <div className="content-container">
@@ -34,11 +38,11 @@ function AddBook() {
             <h1>Merci!</h1>
             <p>votre livre a bien été publié</p>
             <img src={bookAdd} alt="Livre ajouté" />
-            <Link to="/" className="button">Retour à l&apos;accueil</Link>
+            <Link to="/" className="button">
+              Retour à l&apos;accueil
+            </Link>
           </div>
-
         )}
-
       </div>
     </div>
   );
