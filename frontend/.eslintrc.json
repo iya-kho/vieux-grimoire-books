@@ -21,7 +21,7 @@
     "linebreak-style": 0,
     "quotes": ["warning", "single"],
     "avoidEscape": 0,
-    "allowTemplateLiterals": true,
+    "allowTemplateLiterals": 0,
     "semi": ["error", "always"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",

@@ -78,3 +78,19 @@ exports.deleteBook = (req, res, next) => {
       res.status(500).json({ error });
     });
 };
+
+exports.addRating = (req, res, next) => {
+  const { userId, rating } = { ...req.body };
+  Book.findOne({ _id: req.params.id })
+    .then(book => {
+      console.log('hi');
+      const ratingsArr = [...book.ratings, { userId: userId, grade: rating }];
+      console.log('ratingsArr' + JSON.stringify(ratingsArr));
+      Book.updateOne({ _id: req.params.id }, { ratings: ratingsArr, _id: req.params.id })
+        .then(() => res.status(200).json({ message: 'Object modified!' }))
+        .catch(error => res.status(401).json({ error }));
+    })
+    .catch(error => {
+      res.status(500).json({ error });
+    });
+};

@@ -29,7 +29,7 @@ function Book() {
     }
     getItem();
   }, [params.id]);
-
+  console.log(book);
   useEffect(() => {
     if (!userLoading && connectedUser && book?.title) {
       const rate = book.ratings.find((elt) => elt.userId === connectedUser.userId);
@@ -104,7 +104,12 @@ function Book() {
       </Link>
     </div>
   ) : null;
-
+  // console.log(`userRated ${userRated}`);
+  // console.log(`userId ${JSON.stringify(connectedUser)}`);
+  // console.log(`rating ${rating}`);
+  // console.log(`setRating ${setRating}`);
+  // console.log(`setBook ${setBook}`);
+  // console.log(`book.id ${params.id}`);
   return (
     <div className="content-container">
       <BackArrow />

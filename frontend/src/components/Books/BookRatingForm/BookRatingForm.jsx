@@ -1,5 +1,5 @@
 import * as PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import styles from './BookRatingForm.module.css';
@@ -31,6 +31,7 @@ function BookRatingForm({
       navigate(APP_ROUTES.SIGN_IN);
     }
     const update = await rateBook(id, userId, rating);
+    console.log(userId);
     console.log(update);
     if (update) {
       // eslint-disable-next-line no-underscore-dangle
