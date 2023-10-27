@@ -13,7 +13,14 @@ exports.getOneBook = (req, res, next) => {
     .catch(error => res.status(404).json({ error }));
 };
 
-exports.getBestRatedBooks = (req, res, next) => {};
+exports.getBestRatedBooks = (req, res, next) => {
+  Book.find()
+    .then(books => {
+      const bestRatedBooks = books.sort((a, b) => b.averageRating - a.averageRating).slice(0, 3);
+      res.status(200).json(bestRatedBooks);
+    })
+    .catch(error => res.statusCode(400).json({ error }));
+};
 
 exports.createBook = (req, res, next) => {
   const bookObject = JSON.parse(req.body.book);
