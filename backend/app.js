@@ -2,17 +2,23 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+const helmet = require('helmet');
 
 const booksRoutes = require('./routes/books');
 const userRoutes = require('./routes/user');
 
+const rateLimit = require('./middleware/ratelimit');
+app.use(rateLimit);
+
 mongoose
   .connect(
-    'mongodb+srv://iyakho:QrPEG$eSykLmx3T@cluster0.ssmrfnt.mongodb.net/?retryWrites=true&w=majority',
+    process.env.DB_LINK,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
+
+app.use(helmet());
 
 app.use(express.json());
 
