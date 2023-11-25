@@ -1,5 +1,4 @@
 import * as PropTypes from 'prop-types';
-import React from 'react';
 import styles from '../../../pages/Book/Book.module.css';
 import { displayStars } from '../../../lib/functions';
 

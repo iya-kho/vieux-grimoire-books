@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
-  BrowserRouter, Route, Routes,
+  HashRouter, Route, Routes,
 } from 'react-router-dom';
 import SignIn from './pages/SignIn/SignIn';
 import Home from './pages/Home/Home';
@@ -21,7 +21,7 @@ function App() {
     setUser(connectedUser);
   }, [connectedUser]);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <ScrollToTop />
         <Header user={user} setUser={setUser} />
@@ -34,7 +34,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
