@@ -18,8 +18,6 @@ mongoose
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
-app.use(helmet());
-
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -31,6 +29,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   next();
 });
+
+app.use(helmet());
 
 app.use('/api/books', booksRoutes);
 app.use('/api/auth', userRoutes);
