@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+const helmet = require('helmet');
 
 const booksRoutes = require('./routes/books');
 const userRoutes = require('./routes/user');
@@ -28,6 +29,12 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   next();
 });
+
+app.use(
+  helmet({
+    crossOriginEmbedderPolicy: false,
+  })
+);
 
 app.use('/api/books', booksRoutes);
 app.use('/api/auth', userRoutes);
