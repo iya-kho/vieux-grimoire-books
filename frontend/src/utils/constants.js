@@ -1,4 +1,4 @@
-const API_URL = 'https://vieux-grimoire-api.onrender.com';
+const API_URL = 'https://vieux-grimoire-books-server.onrender.com';
 export const API_ROUTES = {
   SIGN_UP: `${API_URL}/api/auth/signup`,
   SIGN_IN: `${API_URL}/api/auth/login`,
