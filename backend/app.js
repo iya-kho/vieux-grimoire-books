@@ -30,7 +30,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginEmbedderPolicy: false,
+  })
+);
 
 app.use('/api/books', booksRoutes);
 app.use('/api/auth', userRoutes);
