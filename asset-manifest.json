@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vieux-grimoire-books/static/css/main.78fef0e5.css",
-    "main.js": "/vieux-grimoire-books/static/js/main.593db45a.js",
+    "main.js": "/vieux-grimoire-books/static/js/main.e245dbd1.js",
     "static/js/787.2c0e5b38.chunk.js": "/vieux-grimoire-books/static/js/787.2c0e5b38.chunk.js",
     "static/media/home_banner.jpg": "/vieux-grimoire-books/static/media/home_banner.e160219c56381f5d72be.jpg",
     "static/media/book_delete.png": "/vieux-grimoire-books/static/media/book_delete.f0aec92a2dde895664ec.png",
@@ -10,11 +10,11 @@
     "static/media/map_footer.png": "/vieux-grimoire-books/static/media/map_footer.a4eb4130dd9828775917.png",
     "index.html": "/vieux-grimoire-books/index.html",
     "main.78fef0e5.css.map": "/vieux-grimoire-books/static/css/main.78fef0e5.css.map",
-    "main.593db45a.js.map": "/vieux-grimoire-books/static/js/main.593db45a.js.map",
+    "main.e245dbd1.js.map": "/vieux-grimoire-books/static/js/main.e245dbd1.js.map",
     "787.2c0e5b38.chunk.js.map": "/vieux-grimoire-books/static/js/787.2c0e5b38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78fef0e5.css",
-    "static/js/main.593db45a.js"
+    "static/js/main.e245dbd1.js"
   ]
 }
