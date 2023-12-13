@@ -1,10 +1,10 @@
 [{
   "id": "1",
   "userId" : "clc4wj5lh3gyi0ak4eq4n8syr",
-  "title" : "Milwaukee Mission",
-  "author": "Elder Cooper",
-  "imageUrl" : "https://via.placeholder.com/206x260",
-  "year" : 2021,
+  "title" : "The Cuckoo's Calling",
+  "author": "Robert Galbraith",
+  "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/4/49/TheCuckoo%27sCalling%28first_UK_edition%29cover.jpg",
+  "year" : 2013,
   "genre" : "Policier",
   "ratings" : [{
     "userId" : "1",
@@ -29,7 +29,7 @@
     "userId" : "clbxs3tag6jkr0biul4trzbrv",
     "title" : "Book for Esther",
     "author": "Alabaster",
-    "imageUrl" : "https://via.placeholder.com/206x260",
+    "imageUrl" : "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1453057354l/26895153.jpg",
     "year" : 2022,
     "genre" : "Paysage",
     "ratings" : [{
@@ -55,7 +55,7 @@
     "userId" : "1",
     "title" : "The Kinfolk Table",
     "author": "Nathan Williams",
-    "imageUrl" : "https://via.placeholder.com/206x260",
+    "imageUrl" : "https://designbook.com.ua/product_img/cache/4ed5d82e56de1e4c08ff829d897a2416_600_450.jpg",
     "year" : 2022,
     "genre" : "Cuisine",
     "ratings" : [{
@@ -79,11 +79,11 @@
   {
     "id": "4",
     "userId" : "1",
-    "title" : "Milwaukee Mission",
-    "author": "Elder Cooper",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2021,
-    "genre" : "Policier",
+    "title" : "The Guernsey Literary and Potato Peel Pie Society",
+    "author": "Mary Ann Shaffer, Annie Barrows",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1529026760i/39832183.jpg",
+    "year" : 2008,
+    "genre" : "Historique",
     "ratings" : [{
       "userId" : "1",
       "grade": 5
@@ -105,11 +105,11 @@
   {
     "id": "5",
     "userId" : "1",
-    "title" : "Book for Esther",
-    "author": "Alabaster",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2022,
-    "genre" : "Paysage",
+    "title" : "Animals Make Us Human: Creating the Best Life for Animals",
+    "author": "Temple Grandin, Catherine Johnson",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348264535i/4386485.jpg",
+    "year" : 2009,
+    "genre" : "Nonfiction",
     "ratings" : [{
       "userId" : "1",
       "grade": 5
@@ -131,11 +131,11 @@
   {
     "id": "6",
     "userId" : "1",
-    "title" : "The Kinfolk Table",
-    "author": "Nathan Williams",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2022,
-    "genre" : "Cuisine",
+    "title" : "The Help",
+    "author": "Kathryn Stockett",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1622355533i/4667024.jpg",
+    "year" : 2009,
+    "genre" : "Historique",
     "ratings" : [{
       "userId" : "1",
       "grade": 5
@@ -157,11 +157,11 @@
   {
     "id": "7",
     "userId" : "1",
-    "title" : "Milwaukee Mission",
-    "author": "Elder Cooper",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2021,
-    "genre" : "Policier",
+    "title" : "The Time Traveler's Wife",
+    "author": "Audrey Niffenegger",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1380660571i/18619684.jpg",
+    "year" : 2003,
+    "genre" : "Fantastique",
     "ratings" : [{
       "userId" : "1",
       "grade": 5
@@ -183,11 +183,11 @@
   {
     "id": "8",
     "userId" : "clc7s9xnh7zpt0ak4fisdwuj1",
-    "title" : "Book for Esther",
-    "author": "Alabaster",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2022,
-    "genre" : "Paysage",
+    "title" : "My Sister's Keeper",
+    "author": "Jodi Picoult",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369504683i/10917.jpg",
+    "year" : 2004,
+    "genre" : "Adolescent",
     "ratings" : [{
       "userId" : "1",
       "grade": 5
@@ -209,11 +209,11 @@
   {
     "id": "9",
     "userId" : "clc4wj5lh3gyi0ak4eq4n8syr",
-    "title" : "The Kinfolk Table",
-    "author": "Nathan Williams",
-    "imageUrl" : "https://via.placeholder.com/206x260",
-    "year" : 2022,
-    "genre" : "Cuisine",
+    "title" : "Married with Zombies",
+    "author": "Jesse Petersen",
+    "imageUrl" : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1265814659i/7716140.jpg",
+    "year" : 2010,
+    "genre" : "Horreur",
     "ratings" : [{
       "userId" : "1",
       "grade": 5

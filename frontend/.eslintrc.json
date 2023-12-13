@@ -20,7 +20,7 @@
     "rules": {
     "indent": ["error", 2],
     "linebreak-style": 0,
-    "quotes": ["warning", "single"],
+    "quotes": [1, "single"],
     "avoidEscape": 0,
     "allowTemplateLiterals": 0,
     "semi": ["error", "always"],
