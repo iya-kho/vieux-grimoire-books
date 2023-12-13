@@ -27,6 +27,7 @@ app.use((req, res, next) => {
     'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
   );
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+  res.setHeader('Cross-Origin-Resource-Policy', 'same-site');
   next();
 });
 
