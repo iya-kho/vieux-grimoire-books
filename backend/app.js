@@ -12,7 +12,7 @@ app.use(rateLimit);
 
 mongoose
   .connect(
-    'mongodb+srv://iyakho:QrPEG$eSykLmx3T@cluster0.ssmrfnt.mongodb.net/?retryWrites=true&w=majority',
+    process.env.DB_LINK,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log('Connexion à MongoDB réussie !'))
