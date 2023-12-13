@@ -32,8 +32,7 @@ app.use((req, res, next) => {
 
 app.use(
   helmet({
-    crossOriginOpenerPolicy: false,
-    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: false,
   })
 );
 
