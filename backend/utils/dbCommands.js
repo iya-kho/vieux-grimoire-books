@@ -1,4 +1,6 @@
-Book.deleteMany()
+
+const Work = require('./models/Work');
+Work.deleteMany()
   .then(console.log('deleted'))
   .catch(error => console.log(error));
 
